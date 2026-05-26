@@ -15,6 +15,8 @@ body {
 html {
   max-width: 100%;
   overflow-x: hidden;
+  width: 100%;
+  margin: 0;
  }
 
 .container {
@@ -56,7 +58,7 @@ p {
   margin: 52px auto 0;
   background: linear-gradient(90deg, #08162A 0%, #0B1F3C 100%);
   border: 2px solid #1b1d30;
-  border-radius: 14px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,7 +106,7 @@ nav a:hover {
   height: 100px;
   padding: 45px 100px;
   border: 1px solid #3a3e65;
-  border-radius: 14px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,7 +131,7 @@ nav a:hover {
   height: 100px;
   padding: 45px 0;
   border: 1px solid #3a3e65;
-  border-radius: 14px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +179,7 @@ nav a:hover {
   inset: 0;
   background: rgba(75, 86, 200, 0.8);
   filter: blur(20px);
-  border-radius: 14px;
+  border-radius: 6px;
 }
 
 .cta-btn {
@@ -186,7 +188,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 50px 120px;
-  border-radius: 14px;
+  border-radius: 6px;
   background: linear-gradient(90deg, #307CE8 0%, #1763CF 100%);
   color: white;
   text-decoration: none;
@@ -256,7 +258,7 @@ nav a:hover {
 .image-card {
   height: 373px;
   border: 1px solid #1b1d30;
-  border-radius: 14px;
+  border-radius: 6px;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
 }
 
@@ -311,7 +313,7 @@ nav a:hover {
   width: 807px;
   height: 673px;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
-  border-radius: 14px 0 0 14px;
+  border-radius: 6px 0 0 6px;
   border: 1px solid #1b1d30;
 }
 
@@ -320,7 +322,7 @@ nav a:hover {
   height: 673px;
   padding: 85px;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
-  border-radius: 0 14px 14px 0;
+  border-radius: 0 6px 6px 0;
   border: 1px solid #1b1d30;
   display: flex;
   flex-direction: column;
@@ -331,14 +333,15 @@ nav a:hover {
   font-size: 20px;
   width: fit-content;
   padding: 30px 40px;
-  border-radius: 14px;
-  border: 1px solid #24284d;
+  border-radius: 6px;
+  border: 1px solid #1b1f44;
   background: #091B34;
   color: #2F7BE7;
   font-weight: 700;
   letter-spacing: .32em;
   margin-bottom: 40px;
   font-style: italic;
+  font-weight: 400;
 }
 
 .icone-instagram {
@@ -417,7 +420,7 @@ nav a:hover {
 
 .mini-card {
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 85px;
   min-height: 680px;
   display: flex;
@@ -437,6 +440,10 @@ nav a:hover {
   font-size: 30px;
   margin: 30px 0 20px;
   line-height: 150%;
+}
+
+.icone-olho {
+  width: 50px;
 }
 
 .icon-lines {
@@ -459,19 +466,31 @@ nav a:hover {
   left: 10px;
 }
 
+img.logo-rodape {
+  width: 165px;
+  margin-bottom: 10px;
+}
+
+/* ========================= 
+SITE PARA DESKTOP (1920px) 
+========================= */
+
 @media (max-width: 1920px) {
   .container,
   .header {
-    width: calc(100% - 80px);
+    width: calc(100% - 100px);
   }
 
-  .image-grid,
-  .gallery-grid,
-  .feature-card,
-  .dual-wrapper {
-    grid-template-columns: 1fr;
-    display: flex;
-    flex-direction: column;
+  .hero-content {
+    width: 719px;
+    margin-left: 50px;
+    margin-top: 110px;
+  }
+
+  .section-header p {
+    width: 813px;
+    text-align: right;
+    margin-right: 30px;
   }
 
   .feature-image,
@@ -480,75 +499,345 @@ nav a:hover {
   .image-card {
     width: 100%;
   }
+
+  .whatsapp-float {
+    right: 20px;
+    bottom: 20px;
+    margin-right: 50px;
+  }
+
+  .Footer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+    border-top: 1px solid #1b1d30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 120px;
+  }
 }
 
-@media (max-width: 768px) {
-  .hero {
-    height: auto;
-    padding-bottom: 120px;
-  }
+/* ========================= 
+SITE PARA NOTEBOOK (1366px) 
+========================= */
 
+@media (min-width: 1366px) and (max-width: 1919px) {
+  .container,
   .header {
-    flex-direction: column;
-    height: auto;
-    gap: 30px;
-    padding: 30px;
+    width: calc(100% - 100px);
   }
 
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
+  p {
+  color: #C0C2D8;
+  line-height: 220%;
+  font-size: 16px;
+  text-wrap: balance;
   }
 
   .hero-content {
-    width: calc(100% - 40px);
-    margin: 80px 20px 0;
+    width: 719px;
+    margin-left: 50px;
+    margin-top: 110px;
   }
 
-  .hero-content h1 {
-    font-size: 34px;
+  .section-header p {
+    width: 813px;
+    text-align: right;
+    margin-right: 30px;
   }
 
-  .hero-content p,
-  .section-header h2,
-  .section-header p,
-  .gallery-header p {
-    width: 100%;
-  }
-
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
+  .feature-image,
   .feature-content,
-  .mini-card {
-    padding: 40px 30px;
+  .mini-card,
+  .image-card {
+    width: 100%;
   }
 
   .whatsapp-float {
     right: 20px;
     bottom: 20px;
+    margin-right: 50px;
   }
-  ::-webkit-scrollbar {
-      width: 8px;
+
+  .Footer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+    border-top: 1px solid #1b1d30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 120px;
+  }
+}
+
+/* ========================= 
+SITE PARA MOBILE (767px) 
+MARGIN 40px NAS LATERAIS 
+========================= */
+
+@media (max-width: 767px) {
+
+  .container,
+  .header {
+    width: calc(100% - 40px);
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 180%;
+  }
+
+  /* HERO */
+
+  .hero {
+    height: auto;
+    padding-bottom: 120px;
+    border-radius: 18px;
+    background-position: center;
+  }
+
+  .header {
+    height: auto;
+    margin-top: 20px;
+    padding: 24px;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .logo-text {
+    font-size: 28px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .secondary-btn {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    font-size: 14px;
+  }
+
+  .hero-content {
+    width: 100%;
+    margin: 80px 0 0;
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 140%;
+  }
+
+  .hero-content p {
+    width: 100%;
+  }
+
+  .cta-wrapper {
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 28px;
+    font-size: 15px;
+  }
+
+  .whatsapp-float {
+    width: 74px;
+    height: 74px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .whatsapp-float img {
+    width: 34px;
+  }
+
+  /* SECTION HEADER */
+
+  .section-header {
+    display: flow;
+    margin-bottom: 60px;
+    width: 700px;
+    text-align: center;
   }
   
-  ::-webkit-scrollbar-track {
-    background: #000000;
+  .section-header h2 {
+    font-size: 40px;
+    line-height: 150%;
+    width: 750px;
+    margin-bottom: 40px;
+    width: 700px;
+    text-align: center;
   }
   
-  ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background: linear-gradient(180deg, #e9ebc3, #e4cd5b);
+  .section-header p {
+    width: 700px;
+    text-align: center;
+    line-height: 200%;
   }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background: linear-gradient(0deg, #e9ebc3, #e4cd5b);
+
+  /* GRIDS */
+
+  .image-grid,
+  .gallery-grid,
+  .dual-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
+
+  .image-card {
+    height: 260px;
+  }
+
+  /* FEATURE CARD */
+
+  .feature-card {
+    flex-direction: column;
+  }
+
+  .feature-image {
+    width: 100%;
+    height: 260px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .feature-content {
+    width: 100%;
+    height: auto;
+    padding: 40px 28px;
+    border-radius: 0 0 6px 6px;
+  }
+
+  .feature-content h3 {
+    font-size: 24px;
+  }
+
+  .tag {
+    font-size: 14px;
+    padding: 18px 24px;
+    letter-spacing: .2em;
+  }
+
+  /* MINI CARDS */
+
+  .cards-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    line-height: 150%;
+  }
+
+  .mini-card {
+    min-height: auto;
+    padding: 40px 28px;
+  }
+
+  .mini-card-content h3 {
+    font-size: 24px;
+  }
+
+  /* GALLERY */
+
+  .gallery-header h2 {
+    font-size: 40px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+
+  .gallery-header p {
+    width: 100%;
+  }
+
+  .gallery-grid .image-card {
+    height: 260px;
+  }
+
+  /* FAQ */
+
+  .FAQ-Wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .FAQ-Item {
+    width: 100%;
+    height: auto;
+    padding: 28px 24px;
+  }
+
+  .FAQ-Suporte {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 40px 28px;
+  }
+
+  .FAQ-Header h2 {
+    font-size: 28px;
+  }
+
+  /* FOOTER */
+
+  .Footer {
+    height: auto;
+    padding: 32px 20px;
+  }
+
+  .Footer-Wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .Redes-Sociais {
+    justify-content: center;
+  }
+
+}
+
+/* ========================= 
+BARRA DE ROLAGEM/SCROLL 
+========================= */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #307CE8, #1763CF);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #307CE8, #1763CF);
 }
 
 /* =========================
@@ -600,7 +889,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 36px 40px;
-  border-radius: 14px;
+  border-radius: 6px;
   background: linear-gradient(90deg,#071222 0%,#08162B 100%);
   border: 1px solid #1b1d30;
   transition: all 0.2s ease;
@@ -617,7 +906,7 @@ nav a:hover {
 
 .FAQ-Suporte {
   padding: 60px 60px;
-  border-radius: 14px;
+  border-radius: 6px;
   background: linear-gradient(90deg,#071222 0%,#08162B 100%);
   border: 1px solid #1b1d30;
   width: 552px;
@@ -648,7 +937,6 @@ nav a:hover {
   width: 100%;
   max-width: 100%;
   margin: 0;
-  padding: 31px 120px;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
   border-top: 1px solid #1b1d30;
   display: flex;
