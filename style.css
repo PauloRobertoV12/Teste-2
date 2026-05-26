@@ -337,11 +337,9 @@ nav a:hover {
   border: 1px solid #1b1f44;
   background: #091B34;
   color: #2F7BE7;
-  font-weight: 700;
-  letter-spacing: .32em;
+  letter-spacing: 6px;
   margin-bottom: 40px;
-  font-style: italic;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .icone-instagram {
@@ -408,7 +406,7 @@ nav a:hover {
 }
 
 .dual-cards {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .dual-wrapper {
@@ -443,7 +441,11 @@ nav a:hover {
 }
 
 .icone-olho {
-  width: 50px;
+  width: 40px;
+}
+
+.icone-adicionar {
+  width: 20px;
 }
 
 .icon-lines {
@@ -469,6 +471,214 @@ nav a:hover {
 img.logo-rodape {
   width: 165px;
   margin-bottom: 10px;
+}
+
+/* =========================
+   SOBRE NÓS
+========================= */
+
+.about-section {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 180px;
+  overflow: hidden;
+}
+
+/* TEXTO GIGANTE */
+
+.about-bg-text {
+  position: absolute;
+  width: 100%;
+  margin-top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-bg-text h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 380px;
+  line-height: 120%;
+  text-align: center;
+  white-space: nowrap;
+
+  background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARD */
+
+.about-card {
+  position: relative;
+  z-index: 2;
+  margin-top: 292px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  min-height: 666px;
+  border-radius: 6px;
+  border: 1px solid #1b1d30;
+  background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+}
+
+/* WRAPPER */
+
+.about-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+/* IMAGEM */
+
+.about-image {
+  width: 765px;
+  height: 579px;
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  margin-left: -155px;
+}
+
+/* CONTEÚDO */
+
+.about-content {
+  width: 520px;
+}
+
+/* HEADER */
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.about-header span {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 6px;
+  color: #2F7BE7;
+}
+
+.about-header h3 {
+  font-family: 'Figtree', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+/* TEXTOS */
+
+.about-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-texts p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  color: #C0C2D8;
+}
+
+/* =========================
+   NOTEBOOK 1366px
+========================= */
+
+@media (max-width: 1366px) {
+
+  .about-bg-text h2 {
+    font-size: 250px;
+  }
+
+  .about-wrapper {
+    gap: 60px;
+  }
+
+  .about-image {
+    width: 50%;
+    height: auto;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+}
+
+/* =========================
+   MOBILE 767px
+========================= */
+
+@media (max-width: 767px) {
+
+  .about-section {
+    padding: 100px 20px;
+  }
+
+  .about-bg-text h2 {
+    font-size: 90px;
+  }
+
+  .about-card {
+    margin-top: 120px;
+    padding: 24px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-header {
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .about-header span {
+    font-size: 14px;
+    letter-spacing: 0.18em;
+  }
+
+  .about-header h3 {
+    font-size: 28px;
+  }
+
+  .about-texts p {
+    font-size: 16px;
+    line-height: 180%;
+  }
 }
 
 /* ========================= 
@@ -845,7 +1055,6 @@ BARRA DE ROLAGEM/SCROLL
 ========================= */
 
 .FAQ {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -860,12 +1069,11 @@ BARRA DE ROLAGEM/SCROLL
 
 .FAQ-Header span {
   display: inline-block;
-  color: #2F7BE7;
-  font-weight: 700;
+  color: #2F7BE7;  
+  font-weight: bold;
   margin-bottom: 20px;
-  font-style: italic;
+  letter-spacing: 6px;
 }
-
 
 .FAQ-Header h2 {
   font-family: 'Figtree', sans-serif;
@@ -918,9 +1126,8 @@ BARRA DE ROLAGEM/SCROLL
   color: #2F7BE7;
   margin-bottom: 24px;
   font-family: 'Figtree', sans-serif;
-  letter-spacing: 24%;
+  letter-spacing: 6px;
   font-size: 24px;
-  font-style: italic;
 }
 
 .FAQ-Suporte p {
