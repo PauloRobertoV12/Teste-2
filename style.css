@@ -307,6 +307,11 @@ nav a:hover {
 .feature-card {
   display: flex;
   margin-bottom: 40px;
+  transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
 }
 
 .feature-image {
@@ -424,12 +429,12 @@ nav a:hover {
   display: flex;
   align-items: center;
   border: 1px solid #1b1d30;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   border-left: 8px solid #2D78E4;
 }
 
 .mini-card:hover {
-  transform: scale(1.01);
+  transform: translateY(-4px);
   background: linear-gradient(90deg, #121f32 0%, #0e1e35 100%);
   border: 1px solid #0d43905e;
 }
@@ -523,6 +528,11 @@ img.logo-rodape {
   border-radius: 6px;
   border: 1px solid #1b1d30;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+  transition: all 0.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
 }
 
 /* WRAPPER */
