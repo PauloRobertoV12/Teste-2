@@ -68,7 +68,7 @@ p {
 .logo {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .logo-icon {
@@ -208,7 +208,7 @@ nav a:hover {
 .whatsapp-float {
   position: absolute;
   right: 160px;
-  bottom: 80px;
+  bottom: 150px;
   width: 102px;
   height: 102px;
   border-radius: 50%;
@@ -469,7 +469,7 @@ nav a:hover {
 }
 
 img.logo-rodape {
-  width: 165px;
+  width: 120px;
   margin-bottom: 10px;
 }
 
