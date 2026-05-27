@@ -275,9 +275,10 @@ nav a:hover {
 
 .ticker-track {
   display: flex;
-  gap: 80px;
+  width: max-content;
+  gap: 0px;
   white-space: nowrap;
-  animation: scroll 20 linear infinite;
+  animation: ticker-scroll 60s linear infinite;
 }
 
 .ticker-track span {
@@ -285,10 +286,20 @@ nav a:hover {
   color: #C0C2D8;
 }
 
-@keyframes scroll {
+.ticker-group {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding-right: 80px;
+  flex-shrink: 0;
+}
+
+@keyframes ticker-scroll {
+
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -311,7 +322,7 @@ nav a:hover {
 }
 
 .feature-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
 }
 
 .feature-image {
@@ -434,9 +445,9 @@ nav a:hover {
 }
 
 .mini-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   background: linear-gradient(90deg, #121f32 0%, #0e1e35 100%);
-  border: 1px solid #0d43905e;
+  border: 1px solid #0d439030;
 }
 
 .mini-card-content h3 {
@@ -510,7 +521,7 @@ img.logo-rodape {
   text-align: center;
   white-space: nowrap;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -532,7 +543,7 @@ img.logo-rodape {
 }
 
 .about-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
 }
 
 /* WRAPPER */
@@ -1118,7 +1129,7 @@ BARRA DE ROLAGEM/SCROLL
 .FAQ-Item:hover {
   transform: translateY(-2px);
   background: linear-gradient(90deg, #121f32 0%, #0e1e35 100%);
-  border: 1px solid #0d43905e;
+  border: 1px solid #0d439030;
 }
 
 .FAQ-Suporte {
