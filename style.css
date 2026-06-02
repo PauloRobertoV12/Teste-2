@@ -1,13 +1,91 @@
 :root {
+
+/* ===========================================
+WIDESCREEN RESPONSIVO 2440px
+============================================== */
+
+/* ======================
+--CORES-- 
+========================= */
+
+  --color-title: #ffffff;
+  --color-text: #C0C2D8;
+  --color-bg: #050D1A;
+  --color-tag: #2F7BE7;
+
+/* ======================
+--GRADIENTES-- 
+========================= */
+  --color-header: linear-gradient(90deg, #08162A 0%, #0B1F3C 100%);
+  
+
+/* ====================== 
+--BOTÕES E TEXTOS-- 
+========================= */
+
+/* BOTÃO PRIMÁRIO */ 
+  --color-btn1-text: #ffffff;
+  --color-btn1: #2F7BE7;
+
+/* BOTÃO SECUNDÁRIO */
+  --color-btn2-text: #C0C2D8;
+  --color-btn2: linear-gradient(90deg, #07122200 0%, #041124 100%);
+/* BOTÃO SECUNDÁRIO COM HOVER */
+  --color-btn2-hover: #2F7BE7;
+
+/* BORDAS */
+  --border-primary: #1B1D30;
+  --border-tag: #1b1f44;
+  --border-btn2: #3a3e65;
+/* BORDAS NO HOVER */
+  --border-btn2-hover: 2px solid #2F7BE7;
+
+/* HOVER */
+  --color-nav-hover: #ffffff;
+  --color-btn1-hover: #3d5475;
+  --border-hover: #0d439030;
+
+/* SOMBRA DA CAIXA / HOVER */
+  --shadow-btn2: 0 0 10px 0 #2F7BE7;
+
+  
+/* ========================= 
+--TIPOGRAFIA--
+============================ */
+
+  --font-title: 'Figtree', sans-serif;
+  --font-text: 'Inter', sans-serif;
+  --fs-h1: 45px;
+  --fs-h2: 35px;
+  --fs-h3: 30px;
+  --fs-h4: ;
+  --fs-h5: ;
+  --fs-h6: ;
+  --fs-p: 18px;
+  --lh-title: 150%;
+  --lh-text: 200%;
+
+/* ============================ 
+--ESPAÇAMENTOS-- 
+=============================== */
   --section-padding-top: 120px;
   --section-padding-bottom: 120px;
   --container-padding: 32px;
-  --card-gap: 24px;
+  --padding-btn1: 50px 120px;
+  --padding-btn2: 45px 100px; 
+  --gap-12: 12px;
+  --gap-24: 24px;
+  --gap-nav: 150px;
+
+/* LAYOUT */    
+  --h1-width: 50%;
+  --container-width: 1720px;
+  --radius: 4px;
 }
 
-/* =========================
-   RESET / GLOBAL
-========================= */
+/* ===============================
+--RESET / GLOBAL--
+================================== */
 
 * {
   margin: 0;
@@ -23,10 +101,10 @@ html {
 }
 
 body {
-  background: #050D1A;
-  color: #C0C2D8;
-  font-size: 18px;
-  font-family: 'Inter', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--fs-p);
+  font-family: var(--font-text);
   overflow-x: hidden;
 }
 
@@ -40,42 +118,42 @@ section:not(.hero):not(.ticker) {
 }
 
 .container {
-  width: min(100%, 1680px);
-  max-width: 1680px;
+  width: 100%;
+  max-width: var(--container-width);
   margin: 0 auto;
   padding-inline: var(--container-padding);
 }
 
-/* =========================
-   TIPOGRAFIA
-========================= */
+/* ============================
+--TIPOGRAFIA / FONTES--
+============================ */
 
 h1,
 h2,
 h3 {
-  font-family: 'Figtree', sans-serif;
+  font-family: var(--font-title);
   font-weight: 700;
-  color: #fff;
+  color: var(--color-title);
   text-wrap: balance;
 }
 
 p {
-  color: #C0C2D8;
-  line-height: 220%;
-  font-size: 18px;
+  color: var(--color-text);
+  line-height: var(--lh-text);
+  font-size: var(--fs-p);
   text-wrap: balance;
 }
 
 /* =========================
-   HERO
+--HERO-SECTION--
 ========================= */
 
 .hero {
   height: 900px;
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
-  border: 1px solid #1b1d30;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-primary);
   background: url(./assets/Background.png);
   background-size: cover;
 }
@@ -86,9 +164,9 @@ p {
 }
 
 .hero-content h1 {
-  width: 70%;
-  font-size: 45px;
-  line-height: 150%;
+  width: var(--h1-width);
+  font-size: var(--fs-h1);
+  line-height: var(--lh-title);
   margin-bottom: 20px;
 }
 
@@ -99,7 +177,7 @@ p {
 }
 
 /* =========================
-   HEADER
+--HEADER / CABEÇALHO--
 ========================= */
 
 .header {
@@ -110,22 +188,19 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #1b1d30;
-  border-radius: 6px;
-  background: linear-gradient(90deg, #08162A 0%, #0B1F3C 100%);
+  border: 2px solid var(--cor-bordas);
+  border-radius: var(--radius);
+  background: var(--color-header);
 }
+
+/* =========================
+--LOGOTIPO / LOGO--
+========================= */
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 20px;
-}
-
-.logo-icon {
-  width: 32px;
-  height: 32px;
-  border: 3px solid white;
-  background: white;
+  gap: var(--gap-12);
 }
 
 .logo-text {
@@ -134,25 +209,27 @@ p {
   letter-spacing: .1em;
 }
 
+/* =========================
+--NAVEGADOR / NAV--
+========================= */
+
 nav {
   display: flex;
-  gap: 150px;
+  gap: var(--gap-nav);
 }
 
 nav a {
-  color: #C0C2D8;
+  color: var(--color-text);
   text-decoration: none;
-  font-family: 'K2D', sans-serif;
-  font-size: 18px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
-  color: white;
+  color: var(--color-nav-hover);
 }
 
 /* =========================
-   BOTÕES
+--BOTÕES PRIMÁRIO E SECUNDÁRIO--
 ========================= */
 
 .secondary-btn,
@@ -161,15 +238,14 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: var(--gap-12);
   border: 1px solid #3a3e65;
-  border-radius: 6px;
-  color: white;
+  border-radius: var(--radius);
+  color: var(--color-btn2-text);
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
-
   transition: all 0.2s ease;
 }
 
@@ -178,16 +254,15 @@ nav a:hover {
 }
 
 .secondary-btn2 {
-  padding: 45px 0;
+  padding: 45px ;
 }
 
 .secondary-btn:hover,
 .secondary-btn2:hover {
-  color: #ffffff;
-  font-weight: 700;
-  border: 2px solid #2F7BE7;
-  background: linear-gradient(90deg, #07122200 0%, #041124 100%);
-  box-shadow: 0 0 10px 0 #2F7BE7;
+  color: var(--color-nav-hover);
+  background: var(--color-btn2);
+  border: 2px solid var(--color-btn2-hover);
+  box-shadow: var(--shadow-btn2);
 }
 
 .cta-wrapper {
@@ -198,7 +273,7 @@ nav a:hover {
 .cta-shadow {
   position: absolute;
   inset: 0;
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: rgba(75, 86, 200, 0.8);
   filter: blur(20px);
 }
@@ -208,12 +283,11 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: var(--gap-12);
   padding: 50px 120px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   color: white;
   text-decoration: none;
-  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.5px;
   background: linear-gradient(90deg, #307CE8 0%, #1763CF 100%);
@@ -227,15 +301,13 @@ nav a:hover {
 }
 
 /* =========================
-   WHATSAPP FLOAT
+--BOTÃO DO WHATSAPP FLUTUANTE--
 ========================= */
 
 .whatsapp-float {
   position: fixed;
   z-index: 200;
-  right: max(
-    var(--container-padding),
-    calc((100vw - 1680px) / 2 + var(--container-padding))
+  right: max(var(--container-padding), calc((100vw - 1680px) / 2 + var(--container-padding))
   );
   bottom: 140px;
   width: 102px;
@@ -256,7 +328,7 @@ nav a:hover {
 }
 
 /* =========================
-   SECTION HEADER
+--CABEÇALHO DA SEÇÃO--
 ========================= */
 
 .section-header {
@@ -270,7 +342,7 @@ nav a:hover {
 .section-header h2 {
   width: 554px;
   font-size: 35px;
-  line-height: 150%;
+  line-height: var(--lh-title);
 }
 
 .section-header p {
@@ -279,7 +351,7 @@ nav a:hover {
 }
 
 /* =========================
-   TICKER
+--BARRA / FAIXA ANIMADA--
 ========================= */
 
 .ticker {
@@ -323,7 +395,7 @@ nav a:hover {
 }
 
 /* =========================
-   GALLERY
+--GALERIA DE IMAGENS--
 ========================= */
 
 .gallery-header {
@@ -355,7 +427,7 @@ nav a:hover {
 .card-3 {
   height: 463px;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: var(--radius);
   border: 1px solid #1b1d30;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
 }
@@ -385,7 +457,7 @@ nav a:hover {
 }
 
 /* =========================
-   FEATURE CARDS
+--CARTÕES DE DESTAQUE--
 ========================= */
 
 .feature-card {
@@ -420,7 +492,7 @@ nav a:hover {
 
 .feature-content h3 {
   font-size: 30px;
-  line-height: 150%;
+  line-height: var(--lh-title);
   margin-bottom: 24px;
 }
 
@@ -432,10 +504,10 @@ nav a:hover {
   width: fit-content;
   padding: 30px 40px;
   margin-bottom: 40px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   border: 1px solid #1b1f44;
   background: #091B34;
-  color: #2F7BE7;
+  color: var(--color-tag);
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 6px;
@@ -448,7 +520,7 @@ nav a:hover {
 }
 
 /* =========================
-   MINI CARDS
+--MINI-CARDS--
 ========================= */
 
 .dual-wrapper {
@@ -463,7 +535,7 @@ nav a:hover {
   padding: 85px;
   display: flex;
   align-items: center;
-  border-radius: 6px;
+  border-radius: var(--radius);
   border: 1px solid #1b1d30;
   border-left: 8px solid #2D78E4;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
@@ -479,11 +551,11 @@ nav a:hover {
 .mini-card-content h3 {
   margin: 30px 0 20px;
   font-size: 30px;
-  line-height: 150%;
+  line-height: var(--lh-title);
 }
 
 /* =========================
-   ÍCONES
+--ÍCONES--
 ========================= */
 
 .icone-instagram,
@@ -526,7 +598,7 @@ nav a:hover {
 }
 
 /* =========================
-   SOBRE NÓS
+--SEÇÃO SOBRE NÓS--
 ========================= */
 
 .about-section {
@@ -539,7 +611,7 @@ nav a:hover {
   z-index: 1;
   width: 100%;
   left: 50%;
-  margin-top: -300px;
+  margin-top: -350px;
   transform: translateX(-50%);
   pointer-events: none;
 }
@@ -548,7 +620,7 @@ nav a:hover {
   font-family: 'Inter', sans-serif;
   font-size: 380px;
   font-weight: 700;
-  line-height: 120%;
+  line-height: var(--lh-title);
   text-align: center;
   white-space: nowrap;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
@@ -565,7 +637,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
+  border-radius: var(--radius);
   border: 1px solid #1b1d30;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
   transition: all 0.2s ease;
@@ -586,6 +658,7 @@ nav a:hover {
   width: 765px;
   height: 579px;
   flex-shrink: 0;
+  margin-left: -180px;
 }
 
 .about-image img {
@@ -593,12 +666,12 @@ nav a:hover {
   height: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 6px;
-  margin-left: -125px;
+  border-radius: var(--radius);
 }
 
 .about-content {
   width: 520px;
+  margin-left: 100px;
 }
 
 .about-header {
@@ -611,14 +684,14 @@ nav a:hover {
 .about-header span {
   font-size: 24px;
   font-weight: bold;
-  line-height: 150%;
+  line-height: var(--lh-title);
   letter-spacing: 6px;
   color: #2F7BE7;
 }
 
 .about-header h3 {
   font-size: 35px;
-  line-height: 150%;
+  line-height: var(--lh-title);
 }
 
 .about-texts {
@@ -628,14 +701,14 @@ nav a:hover {
 }
 
 .about-texts p {
-  line-height: 200%;
+  line-height: var(--lh-text);
 }
 
 /* =========================
-   FAQ
+--FAQ - PERGUNTAS E RESPOSTAS--
 ========================= */
 
-.FAQ-Header {
+.faq-header {
   margin-bottom: 60px;
 }
 
@@ -644,7 +717,7 @@ nav a:hover {
   font-style: italic;
 }
 
-.FAQ-Header span {
+.faq-header span {
   display: inline-block;
   margin-bottom: 20px;
   color: #2F7BE7;
@@ -652,53 +725,53 @@ nav a:hover {
   letter-spacing: 6px;
 }
 
-.FAQ-Header h2 {
+.faq-header h2 {
   font-size: 35px;
 }
 
-.FAQ-Wrapper {
+.faq-wrapper {
   display: grid;
   grid-template-columns: 1fr 420px;
   gap: 40px;
 }
 
-.FAQ-Lista {
+.faq-lista {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.FAQ-Item {
+.faq-item {
   width: 68%;
   height: 113px;
   padding: 36px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 6px;
+  border-radius: var(--radius);
   border: 1px solid #1b1d30;
   border-left: 10px solid #2D78E4;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
   transition: all 0.2s ease;
 }
 
-.FAQ-Item:hover {
+.faq-item:hover {
   transform: translateY(-2px);
   border: 1px solid #0d439030;
   background: linear-gradient(90deg, #121f32 0%, #0e1e35 100%);
 }
 
-.FAQ-Suporte {
+.faq-suporte {
   width: 552px;
   height: 400px;
   margin-left: -133px;
   padding: 60px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   border: 1px solid #1b1d30;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
 }
 
-.FAQ-Suporte h3 {
+.faq-suporte h3 {
   margin-bottom: 24px;
   color: #2F7BE7;
   font-family: 'Figtree', sans-serif;
@@ -706,16 +779,16 @@ nav a:hover {
   letter-spacing: 6px;
 }
 
-.FAQ-Suporte p {
-  line-height: 2;
+.faq-suporte p {
+  line-height: var(--lh-text);
   margin-bottom: 32px;
 }
 
 /* =========================
-   FOOTER
+--FOOTER / RODAPÉ--
 ========================= */
 
-.Footer {
+.footer {
   width: 100%;
   max-width: 100%;
   height: 120px;
@@ -727,7 +800,7 @@ nav a:hover {
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
 }
 
-.Footer-Wrapper {
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -736,9 +809,9 @@ nav a:hover {
   padding-bottom: 32px;
 }
 
-.Redes-Sociais {
+.redes-sociais {
   display: flex;
-  gap: 24px;
+  gap: var(--gap-24);
 }
 
 img.logo-rodape {
@@ -746,8 +819,8 @@ img.logo-rodape {
   margin-bottom: 10px;
 }
 
-/* =========================
-   SCROLLBAR
+/* ======================
+--SCROLLBAR-- 
 ========================= */
 
 ::-webkit-scrollbar {
@@ -767,14 +840,14 @@ img.logo-rodape {
   background: linear-gradient(180deg, #307CE8, #1763CF);
 }
 
-/* =========================
-   RESPONSIVO 1920px
-========================= */
+/* ===========================================
+WIDESCREEN / DESKTOP RESPONSIVO (1920px)
+============================================== */
 
-@media (max-width: 1920px) {
+@media (min-width: 1367px) and (max-width: 1920px) {
 
   .hero-content {
-    width: 100%;
+    width: 70%;
   }
 
   .section-header p {
@@ -793,22 +866,74 @@ img.logo-rodape {
   }
 }
 
-/* =========================
-   RESPONSIVO 1366px
-========================= */
+/* ===========================================
+NOTEBOOK RESPONSIVO (1366px)
+============================================== */
 
-@media (max-width: 1366px) {
+@media (min-width: 1201px) and (max-width: 1366px) {
 
-  body {
-    font-size: 16px;
+  :root {
+
+/* ======================
+--TIPOGRAFIA-- 
+========================= */    
+
+  --fonte-titulos: 'Figtree', sans-serif;
+  --fonte-textos: 'Inter', sans-serif;
+  --fs-h1: 40px;
+  --fs-h2: 35px;
+  --fs-h3: 30px;
+  --fs-p: 16px;
+  --lh-titulos: 150%;
+  --lh-textos: 220%;
+
+/* ======================
+--ESPAÇAMENTOS-- 
+========================= */  
+
+  --padding-cta: 50px 80px;
+  --padding-btn2: 45px 50px; 
+  --gap-nav: 50px;
+
+/* ======================
+--LAYOUT-- 
+========================= */  
+
+  --h1-width: 60%;
+  --h2-width: 70%;
+  --container-width: 1100px;
+  --radius: 6px;
   }
 
-  p {
-    font-size: 16px;
+  body {
+    font-size: var(--fs-p);
+  }
+
+  .container {
+    width: var(--container-width);
+    padding-inline: 40px;
+  }
+
+  .hero-content h1 {
+    width: var(--h1-width);
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: var(--lh-titulos);
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: var(--lh-titulos);
+  }
+
+  .section-header h2 {
+    width: var(--h2-width);
   }
 
   nav {
-    gap: 90px;
+    gap: var(--gap-nav);
   }
 
   .about-bg-text h2 {
@@ -828,14 +953,18 @@ img.logo-rodape {
     width: 100%;
   }
 
+  .cta-btn {
+    padding: var(--padding-cta);
+  }
+
   .secondary-btn {
-    padding: 45px 80px;
+    padding: var(--padding-btn2);
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* ===========================================
+CELULAR / MOBILE RESPONSIVO (767px)
+============================================== */
 
 @media (max-width: 767px) {
 
@@ -845,7 +974,7 @@ img.logo-rodape {
 
   .container {
     width: 100%;
-    max-width: 687px;
+    max-width: 747px;
     padding-inline: 40px;
   }
 
@@ -861,16 +990,16 @@ img.logo-rodape {
 
   h1 {
     font-size: 45px;
-    line-height: 150%;
+    line-height: var(--lh-title);
   }
 
   h2 {
     font-size: 40px;
-    line-height: 150%;
+    line-height: var(--lh-title);
   }
 
   p {
     font-size: 18px;
-    line-height: 200%;
+    line-height: var(--lh-text);
   }
 }
