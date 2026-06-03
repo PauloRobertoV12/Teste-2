@@ -18,7 +18,6 @@ WIDESCREEN RESPONSIVO 2440px
 ========================= */
   --color-header: linear-gradient(90deg, #08162A 0%, #0B1F3C 100%);
   
-
 /* ====================== 
 --BOTÕES E TEXTOS-- 
 ========================= */
@@ -188,7 +187,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid var(--cor-bordas);
+  border: 1px solid var(--border-primary);
   border-radius: var(--radius);
   background: var(--color-header);
 }
@@ -447,7 +446,7 @@ nav a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  display: contents;
 }
 
 .cards-title {
