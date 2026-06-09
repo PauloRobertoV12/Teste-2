@@ -306,7 +306,7 @@ nav a:hover {
 .whatsapp-float {
   position: fixed;
   z-index: 200;
-  right: max(var(--container-padding), calc((100vw - 1680px) / 2 + var(--container-padding))
+  right: max(var(--container-padding), calc((100vw - 1730px) / 2 + var(--container-padding))
   );
   bottom: 140px;
   width: 102px;
@@ -442,7 +442,7 @@ nav a:hover {
 }
 
 .card-3 {
-  width: 100%;
+  width: 200%;
 }
 
 .card-1 img,
@@ -1044,7 +1044,7 @@ CELULAR / MOBILE RESPONSIVO (767px)
 
   .hero-content {
     width: 100%;
-    max-width: 647px;
+    max-width: 747px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1073,6 +1073,7 @@ CELULAR / MOBILE RESPONSIVO (767px)
   .cta-wrapper {
     position: relative;
     margin: 0 auto;
+    width: 100%;
 
   .cta-btn {
     padding: 55px 105px;
