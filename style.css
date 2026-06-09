@@ -510,11 +510,10 @@ nav a:hover {
 
 .tag {
   width: fit-content;
-  padding: 25px 35px;
+  padding: 30px 45px;
   margin-bottom: 30px;
   border-radius: var(--radius);
   border: 1px solid #1b1f44;
-  background: #09172d;
   color: var(--color-tag);
   font-size: 20px;
   font-weight: bold;
@@ -523,7 +522,6 @@ nav a:hover {
 }
 
 p.step-number {
-  background: #07152A;
   display: flex;
   flex-direction: row;
   align-items: center;
