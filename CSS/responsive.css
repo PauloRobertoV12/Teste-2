@@ -1,0 +1,694 @@
+/* Widescreen */
+@media (min-width: 2401px) {
+
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 56px;
+--fs-h2: 48px;
+--fs-h3: 36px;
+--fs-h4: 28px;
+--fs-h5: 24px;
+--fs-h6: 20px;
+--fs-p: 18px;
+--lh-title: 150%;
+--lh-text: 200%;
+
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--container-padding: 32px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 45px 100px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 150px;
+
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 50%;
+--container-width: 1720px;
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Desktop */ 
+@media (max-width: 2400px) and (min-width: 1367px) {
+
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 48px;
+--fs-h2: 36px;
+--fs-h3: 30px;
+--fs-h4: 26px;
+--fs-h5: 22px;
+--fs-h6: 20px;
+--fs-p: 18px;
+--lh-title: 150%;
+--lh-text: 200%;
+        
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--container-padding: 32px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 45px 100px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 120px;
+        
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 100%;
+--container-width: 1720px;
+}
+        
+.hero-content {
+    width: 70%;
+}
+
+.section-header p {
+    text-align: right;
+}
+        
+.feature-image,
+.feature-content,
+.mini-card,
+.image-card {
+    width: 100%;
+}
+        
+.gallery-header p {
+    margin: 0 auto;
+}
+        
+.whatsapp-float {
+    bottom: 230px;
+    right: max(var(--container-padding), calc((100vw - 1720px) / 2 + var(--container-padding)));
+}
+        
+.faq-item {
+    width: 81%;
+    height: 50%;
+}
+        
+.faq-suporte {
+    padding: 80px 60px;
+    height: 480px;
+    width: 155%;
+    margin-left: -236px;
+    display: grid;
+}
+
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Notebook/Laptop*/
+@media (max-width: 1366px) and (min-width: 1201px) {
+
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 40px;
+--fs-h2: 36px;
+--fs-h3: 28px;
+--fs-h4: 24px;
+--fs-h5: 20;
+--fs-h6: 18;
+--fs-p: 16px;
+--lh-title: 150%;
+--lh-text: 200%;
+
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--container-padding: 32px;
+--padding-cta: 50px 80px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 30px 60px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 60px;
+
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 100%;
+--container-width: 1180px;
+}
+        
+body {
+    font-size: var(--fs-p);
+}
+        
+.container {
+    width: var(--container-width);
+    padding-inline: 40px;
+}
+        
+.hero-content h1 {
+    width: var(--h1-width);
+}
+        
+h1 {
+    font-size: 40px;
+    line-height: var(--lh-titulos);
+}
+        
+h2 {
+    font-size: 35px;
+    line-height: var(--lh-titulos);
+}
+
+p {
+    font-size: var(--fs-p);
+}
+        
+.section-header h2 {
+    width: var(--h2-width);
+}
+        
+nav {
+    gap: var(--gap-nav);
+}
+
+.image-card {
+    width: 45%;
+}
+
+.feature-content {
+    padding: 60px;
+    gap: 0;
+}
+
+.gallery-header p {
+    margin: 0 auto;
+}
+
+.dual-wrapper {
+    display: flex;
+}
+        
+.about-bg-text h2 {
+    font-size: 250px;
+}
+        
+.about-wrapper {
+    gap: 60px;
+}
+        
+.about-bg-text {
+    margin-top: -240px;
+}
+     
+.about-image {
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-left: 175px;
+}
+        
+.about-content {
+    width: 50%;
+}
+        
+.cta-btn {
+    padding: var(--padding-cta);
+}
+        
+.secondary-btn {
+    padding: var(--padding-btn2);
+} 
+
+.whatsapp-float {
+    right: max(var(--container-padding), calc((100vw - 1160px) / 2 + var(--container-padding)));
+    bottom: 230px;
+}
+
+.tag {
+    padding: 25px 30px;
+    font-size: 16px;
+}
+
+.faq-lista {
+    width: 130%;
+}
+
+.faq-item {
+    width: 70%;
+    height: 20%;
+}
+
+.faq-suporte {
+    width: 115%;
+    margin-left: -65px;
+}
+
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Tablet Paisagem */
+@media (max-width: 1200px) and (min-width: 1025px) {
+
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 45px;
+--fs-h2: 35px;
+--fs-h3: 30px;
+--fs-h4: ;
+--fs-h5: ;
+--fs-h6: ;
+--fs-p: 18px;
+--lh-title: 150%;
+--lh-text: 200%;
+
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--container-padding: 32px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 45px 100px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 150px;
+
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 50%;
+--container-width: 924px;
+}
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Tablet Retrato */
+@media (max-width: 1024px) and (min-width: 881px) {
+
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 45px;
+--fs-h2: 35px;
+--fs-h3: 30px;
+--fs-h4: ;
+--fs-h5: ;
+--fs-h6: ;
+--fs-p: 18px;
+--lh-title: 150%;
+--lh-text: 200%;
+
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--container-padding: 32px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 45px 100px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 150px;
+
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 50%;
+--container-width: 780px;
+}
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Celular Paisagem */
+@media (max-width: 880px) and (min-width: 768px) {
+
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 45px;
+--fs-h2: 35px;
+--fs-h3: 30px;
+--fs-h4: ;
+--fs-h5: ;
+--fs-h6: ;
+--fs-p: 18px;
+--lh-title: 150%;
+--lh-text: 200%;
+
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--container-padding: 32px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 45px 100px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 150px;
+
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 50%;
+--container-width: 1720px;
+}
+
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Celular Retrato */
+
+@media (max-width: 767px) {
+
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 30px;
+--fs-h2: 25px;
+--fs-h3: 22px;
+--fs-h4: 20px;
+--fs-h5: 18px;
+--fs-h6: 16;
+--fs-p: 14px;
+--lh-title: 150%;
+--lh-text: 200%;
+
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--container-padding: 32px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 45px 100px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 150px;
+
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 50%;
+--container-width: 360px;
+}
+        
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--fs-p);
+}
+        
+.container {
+    width: 100%;
+    max-width: 747px;
+    margin: 0 auto;
+    padding-inline: 40px;
+}
+        
+.header {
+    padding: 35px;
+}
+        
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+        
+.logo {
+    font-size: 36px;
+}
+        
+.hero {
+    text-align: center;
+    height: 1200px;
+}
+        
+.hero-content {
+    width: 100%;
+    max-width: 747px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 70px;
+}
+        
+.hero-content h1 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: var(--fs-h1);
+    line-height: 150%;
+}
+        
+.hero-content p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 200%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 25px;
+    text-align: center;
+}
+        
+.cta-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+        
+.cta-btn {
+    padding: 55px 105px;
+}
+        
+section {
+    padding-inline: 40px;
+}
+        
+h1,
+h2,
+p {
+    text-align: center;
+}
+        
+h1 {
+    font-size: 45px;
+    line-height: var(--lh-title);
+}
+        
+h2 {
+    font-size: 40px;
+    line-height: var(--lh-title);
+}
+        
+p {
+    font-size: 16px;
+    line-height: var(--lh-text);
+    text-align: left;
+}
+        
+.gallery-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.gallery-header p {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+        
+.card-1,
+.card-2,
+.card-3 {
+    height: 463px;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid #1b1d30;
+    background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+}
+        
+.card-1,
+.card-2 {
+    width: 100%;
+}
+        
+.card-3 {
+    width: 100%;
+}
+        
+.dual-wrapper {
+    display: flow;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+}
+        
+.mini-card {
+    margin-bottom: 24px;
+    text-align: left;
+    padding: 60px;
+}
+        
+.image {
+    width: 100%;
+}
+        
+.cards-title {
+    margin-bottom: 40px;
+}
+        
+.feature-card {
+    display: block;
+    margin-bottom: 40px;
+    transition: all 0.2s ease;
+}
+        
+.feature-content {
+    width: 100%;
+    display: block;
+    height: 673px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid #1b1d30;
+    background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+}
+        
+.image-card {
+    display: flex;
+}
+        
+.big-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+        
+.secondary-btn {
+    display: none;
+    padding: 55px;
+}
+        
+.secondary-btn2 {
+    padding: 55px;
+}
+        
+nav {
+    display: none;
+    gap: var(--gap-nav);
+}
+        
+.section-header {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    width: 100%;
+    font-size: 35px;
+    line-height: var(--lh-title);
+    text-align: center;
+}
+        
+.section-header p {
+    width: 100%;
+    text-align: center;
+}
+        
+.faq-wrapper {
+    display: flow;
+}
+        
+.faq-item {
+    width: 100%;
+}
+        
+.faq-suporte {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 24px;
+    height: 500px;
+    align-content: center;
+}
+        
+.about-image {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+        
+.about-card {
+    display: flow;
+    padding: 60px 60px;
+    width: 100%;
+    text-align: left;
+    min-height: min-content;
+}
+        
+.about-bg-text h2 {
+    font-size: 150px;
+    margin-top: 200px;
+}
+        
+.about-content {
+    width: 100%;
+    margin-left: 0;
+}
+        
+.footer {
+    display: table;
+}
+        
+p.text-footer {
+    font-size: 14px;
+}
+
+}
+
+}
