@@ -1,10 +1,13 @@
 /* Widescreen */
 @media (min-width: 2401px) {
 
+<<<<<<< HEAD
 /* ================================
 ROOT: =========================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 :root {
 
 /* ========================= 
@@ -39,6 +42,7 @@ ROOT: =========================
 --container-width: 1720px;
 }
 
+<<<<<<< HEAD
 /* ================================
 RESET: =========================
 =================================== */
@@ -66,16 +70,21 @@ RESET: =========================
 
 }
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 /* ============================ /* ============================ 
 /* ============================ /* ============================ 
 
 /* Desktop */ 
 @media (max-width: 2400px) and (min-width: 1367px) {
 
+<<<<<<< HEAD
 /* ================================
 ROOT: =========================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 :root {
 
 /* ========================= 
@@ -96,11 +105,20 @@ ROOT: =========================
 =============================== */
 --section-padding-top: 120px;
 --section-padding-bottom: 120px;
+<<<<<<< HEAD
 --padding-btn1: 45px 120px;
 --padding-btn2: 55px 100px; 
 --gap-12: 12px;
 --gap-24: 24px;
 --gap-nav: 150px;
+=======
+--container-padding: 32px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 45px 100px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 120px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
         
 /* ============================ 
 --Layout-- 
@@ -108,6 +126,7 @@ ROOT: =========================
 --h1-width: 100%;
 --container-width: 1720px;
 }
+<<<<<<< HEAD
 
 /* ================================
 RESET: =========================
@@ -133,6 +152,8 @@ RESET: =========================
     font-family: var(--font-text);
     overflow-x: hidden;
   }
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
         
 .hero-content {
     width: 70%;
@@ -146,7 +167,11 @@ RESET: =========================
 .feature-content,
 .mini-card,
 .image-card {
+<<<<<<< HEAD
     width: 45%;
+=======
+    width: 100%;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
         
 .gallery-header p {
@@ -155,7 +180,11 @@ RESET: =========================
         
 .whatsapp-float {
     bottom: 230px;
+<<<<<<< HEAD
     right: max(var(--container-padding), calc((100vw - 1795px) / 2 + var(--container-padding)));
+=======
+    right: max(var(--container-padding), calc((100vw - 1720px) / 2 + var(--container-padding)));
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
         
 .faq-item {
@@ -179,10 +208,13 @@ RESET: =========================
 /* Notebook/Laptop*/
 @media (max-width: 1366px) and (min-width: 1201px) {
 
+<<<<<<< HEAD
 /* ================================
 ROOT: =========================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 :root {
 
 /* ========================= 
@@ -192,8 +224,13 @@ ROOT: =========================
 --fs-h2: 36px;
 --fs-h3: 28px;
 --fs-h4: 24px;
+<<<<<<< HEAD
 --fs-h5: 22px;
 --fs-h6: 20px;
+=======
+--fs-h5: 20;
+--fs-h6: 18;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 --fs-p: 16px;
 --lh-title: 150%;
 --lh-text: 200%;
@@ -209,11 +246,16 @@ ROOT: =========================
 --padding-btn2: 30px 60px; 
 --gap-12: 12px;
 --gap-24: 24px;
+<<<<<<< HEAD
 --gap-nav: 70px;
+=======
+--gap-nav: 60px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 /* ============================ 
 --Layout-- 
 =============================== */
+<<<<<<< HEAD
 --h1-width: 50%;
 --container-width: 1180px;
 }
@@ -245,6 +287,19 @@ RESET: =========================
         
 .container {
     width: var(--container-width);
+=======
+--h1-width: 100%;
+--container-width: 1180px;
+}
+        
+body {
+    font-size: var(--fs-p);
+}
+        
+.container {
+    width: var(--container-width);
+    padding-inline: 40px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
         
 .hero-content h1 {
@@ -253,18 +308,33 @@ RESET: =========================
         
 h1 {
     font-size: 40px;
+<<<<<<< HEAD
     line-height: var(--lh-title);
+=======
+    line-height: var(--lh-titulos);
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
         
 h2 {
     font-size: 35px;
+<<<<<<< HEAD
     line-height: var(--lh-title);
+=======
+    line-height: var(--lh-titulos);
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
 
 p {
     font-size: var(--fs-p);
 }
         
+<<<<<<< HEAD
+=======
+.section-header h2 {
+    width: var(--h2-width);
+}
+        
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 nav {
     gap: var(--gap-nav);
 }
@@ -297,6 +367,17 @@ nav {
 .about-bg-text {
     margin-top: -240px;
 }
+<<<<<<< HEAD
+=======
+     
+.about-image {
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-left: 175px;
+}
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
         
 .about-content {
     width: 50%;
@@ -311,7 +392,11 @@ nav {
 } 
 
 .whatsapp-float {
+<<<<<<< HEAD
     right: max(var(--container-padding), calc((100vw - 1240px) / 2 + var(--container-padding)));
+=======
+    right: max(var(--container-padding), calc((100vw - 1160px) / 2 + var(--container-padding)));
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
     bottom: 230px;
 }
 
@@ -342,15 +427,19 @@ nav {
 /* Tablet Paisagem */
 @media (max-width: 1200px) and (min-width: 1025px) {
 
+<<<<<<< HEAD
 /* ================================
 ROOT: =========================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 :root {
 
 /* ========================= 
 --Tipografia--
 ============================ */
+<<<<<<< HEAD
 --fs-h1: 42px;
 --fs-h2: 32px;
 --fs-h3: 26px;
@@ -358,6 +447,15 @@ ROOT: =========================
 --fs-h5: 22px;
 --fs-h6: 18px;
 --fs-p: 16px;
+=======
+--fs-h1: 45px;
+--fs-h2: 35px;
+--fs-h3: 30px;
+--fs-h4: ;
+--fs-h5: ;
+--fs-h6: ;
+--fs-p: 18px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 --lh-title: 150%;
 --lh-text: 200%;
 
@@ -379,6 +477,7 @@ ROOT: =========================
 --h1-width: 50%;
 --container-width: 924px;
 }
+<<<<<<< HEAD
 
 /* ================================
 RESET: =========================
@@ -405,6 +504,8 @@ RESET: =========================
     overflow-x: hidden;
   }
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
 
 /* ============================ /* ============================ 
@@ -413,15 +514,19 @@ RESET: =========================
 /* Tablet Retrato */
 @media (max-width: 1024px) and (min-width: 881px) {
 
+<<<<<<< HEAD
 /* ================================
 ROOT: =========================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 :root {
 
 /* ========================= 
 --Tipografia--
 ============================ */
+<<<<<<< HEAD
 --fs-h1: 38px;
 --fs-h2: 32px;
 --fs-h3: 26px;
@@ -429,6 +534,15 @@ ROOT: =========================
 --fs-h5: 20px;
 --fs-h6: 18px;
 --fs-p: 16px;
+=======
+--fs-h1: 45px;
+--fs-h2: 35px;
+--fs-h3: 30px;
+--fs-h4: ;
+--fs-h5: ;
+--fs-h6: ;
+--fs-p: 18px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 --lh-title: 150%;
 --lh-text: 200%;
 
@@ -447,6 +561,7 @@ ROOT: =========================
 /* ============================ 
 --Layout-- 
 =============================== */
+<<<<<<< HEAD
 --h1-width: 100%;
 --container-width: 780px;
 }
@@ -484,6 +599,11 @@ nav {
     display: none;
 }
 
+=======
+--h1-width: 50%;
+--container-width: 780px;
+}
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
 
 /* ============================ /* ============================ 
@@ -492,15 +612,19 @@ nav {
 /* Celular Paisagem */
 @media (max-width: 880px) and (min-width: 768px) {
 
+<<<<<<< HEAD
 /* ================================
 ROOT: =========================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 :root {
 
 /* ========================= 
 --Tipografia--
 ============================ */
+<<<<<<< HEAD
 --fs-h1: 35px;
 --fs-h2: 30px;
 --fs-h3: 26px;
@@ -508,6 +632,15 @@ ROOT: =========================
 --fs-h5: 22px;
 --fs-h6: 20px;
 --fs-p: 16px;
+=======
+--fs-h1: 45px;
+--fs-h2: 35px;
+--fs-h3: 30px;
+--fs-h4: ;
+--fs-h5: ;
+--fs-h6: ;
+--fs-p: 18px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 --lh-title: 150%;
 --lh-text: 200%;
 
@@ -530,6 +663,7 @@ ROOT: =========================
 --container-width: 1720px;
 }
 
+<<<<<<< HEAD
 /* ================================
 RESET: =========================
 =================================== */
@@ -562,17 +696,24 @@ RESET: =========================
     gap: 100px;
   }
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
 
 /* ============================ /* ============================ 
 /* ============================ /* ============================ 
 
 /* Celular Retrato */
+<<<<<<< HEAD
 @media (max-width: 767px) {
 
 /* ================================
 ROOT: =========================
 =================================== */
+=======
+
+@media (max-width: 767px) {
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 :root {
 
@@ -584,7 +725,11 @@ ROOT: =========================
 --fs-h3: 22px;
 --fs-h4: 20px;
 --fs-h5: 18px;
+<<<<<<< HEAD
 --fs-h6: 16px;
+=======
+--fs-h6: 16;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 --fs-p: 14px;
 --lh-title: 150%;
 --lh-text: 200%;
@@ -595,8 +740,13 @@ ROOT: =========================
 --section-padding-top: 120px;
 --section-padding-bottom: 120px;
 --container-padding: 32px;
+<<<<<<< HEAD
 --padding-btn1: 55px 120px;
 --padding-btn2: 55px 90px; 
+=======
+--padding-btn1: 50px 120px;
+--padding-btn2: 45px 100px; 
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 --gap-12: 12px;
 --gap-24: 24px;
 --gap-nav: 150px;
@@ -608,6 +758,7 @@ ROOT: =========================
 --container-width: 360px;
 }
         
+<<<<<<< HEAD
 /* ================================
 RESET: =========================
 =================================== */
@@ -632,11 +783,23 @@ RESET: =========================
     font-family: var(--font-text);
     overflow-x: hidden;
   }
+=======
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--fs-p);
+}
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
         
 .container {
     width: 100%;
     max-width: 747px;
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+    padding-inline: 40px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
         
 .header {
@@ -694,7 +857,11 @@ RESET: =========================
 }
         
 .cta-btn {
+<<<<<<< HEAD
     padding: var(--padding-btn2);
+=======
+    padding: 55px 105px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
         
 section {
@@ -808,7 +975,11 @@ p {
 }
         
 .secondary-btn2 {
+<<<<<<< HEAD
     padding: var(--padding-btn2);
+=======
+    padding: 55px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
         
 nav {
@@ -852,13 +1023,26 @@ nav {
     align-content: center;
 }
         
+<<<<<<< HEAD
 .about-card {
     display: flow;
     padding: 30px;
+=======
+.about-image {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+        
+.about-card {
+    display: flow;
+    padding: 60px 60px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
     width: 100%;
     text-align: left;
     min-height: min-content;
 }
+<<<<<<< HEAD
 
 .about-image {
     width: 100%;
@@ -882,6 +1066,9 @@ nav {
     gap: 100px;
   }
  
+=======
+        
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .about-bg-text h2 {
     font-size: 150px;
     margin-top: 200px;
@@ -901,3 +1088,8 @@ p.text-footer {
 }
 
 }
+<<<<<<< HEAD
+=======
+
+}
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ================================
 2) ROOT: ==========================
 =================================== */
@@ -88,6 +89,99 @@ Layout (Root):
 /* ================================
 3) RESET: =========================
 =================================== */
+=======
+@import url('../CSS/responsive.css');
+
+:root {
+
+/* ======================
+--Cores-- 
+========================= */
+  --color-title: #ffffff;
+  --color-text: #C0C2D8;
+  --color-bg: #050D1A;
+  --color-tag: #2F7BE7;
+  --color-bg-tag: #11142a;
+
+/* ======================
+--Gradientes-- 
+========================= */
+  --color-header: linear-gradient(90deg, #08162A 0%, #0B1F3C 100%);
+  
+/* ====================== 
+--Botões e Textos-- 
+========================= */
+
+/*Botão Primário*/ 
+  --color-btn1-text: #ffffff;
+  --color-btn1: #2F7BE7;
+
+/*Botão Secundário*/
+  --color-btn2-text: #C0C2D8;
+  --color-btn2: linear-gradient(90deg, #07122200 0%, #041124 100%);
+
+/*Botão Secundário com Hover*/
+  --color-btn2-hover: #2F7BE7;
+
+/* ====================== 
+--Bordas-- 
+========================= */
+  --border-primary: #1B1D30;
+  --border-tag: #1b1f44;
+  --border-btn2: #3a3e65;
+
+/*Bordas no Hover*/
+  --border-btn2-hover: 2px solid #2F7BE7;
+
+/* ====================== 
+--Hover-- 
+========================= */
+  --color-nav-hover: #ffffff;
+  --color-btn1-hover: #3d5475;
+  --border-hover: #0d439030;
+
+/*Sombra da Caixa com Hover*/
+  --shadow-btn2: 0 0 10px 0 #2F7BE7;
+
+/* ========================= 
+--Tipografia--
+============================ */
+  --font-title: 'Figtree', sans-serif;
+  --font-text: 'Inter', sans-serif;
+  --fs-h1: 45px;
+  --fs-h2: 35px;
+  --fs-h3: 30px;
+  --fs-h4: ;
+  --fs-h5: ;
+  --fs-h6: ;
+  --fs-p: 18px;
+  --lh-title: 150%;
+  --lh-text: 200%;
+
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+  --section-padding-top: 120px;
+  --section-padding-bottom: 120px;
+  --container-padding: 32px;
+  --padding-btn1: 50px 120px;
+  --padding-btn2: 45px 100px; 
+  --gap-12: 12px;
+  --gap-24: 24px;
+  --gap-nav: 150px;
+
+/* ============================ 
+--Layout-- 
+=============================== */
+  --h1-width: 50%;
+  --container-width: 1720px;
+  --radius: 14px;
+}
+
+/* ===============================
+--**Reset Global**--
+================================== */
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 * {
   margin: 0;
@@ -156,6 +250,7 @@ Container:
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* ===============
 Header:
 =============== */
@@ -203,6 +298,8 @@ nav a:hover {
 5) TIPOGRAFIA GLOBAL: =============
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 h1,
 h2,
 h3 {
@@ -219,9 +316,112 @@ p {
   text-wrap: balance;
 }
 
+<<<<<<< HEAD
 /* ================================
 6) COMPONENTES: ===================
 =================================== */
+=======
+.hero {
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-primary);
+  background: url('../assets/Background.png');
+  background-size: cover;
+}
+
+.hero-content {
+  width: 100%;
+  padding-top: 110px;
+}
+
+.hero-content h1 {
+  width: var(--h1-width);
+  font-size: var(--fs-h1);
+  line-height: var(--lh-title);
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+
+.header {
+  width: 100%;
+  height: 140px;
+  margin: 52px auto 0;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius);
+  background: var(--color-header);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-12);
+}
+
+.logo-text {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 37px;
+  letter-spacing: .1em;
+}
+
+nav {
+  display: flex;
+  gap: var(--gap-nav);
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-nav-hover);
+}
+
+.secondary-btn,
+.secondary-btn2 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-12);
+  border: 1px solid #3a3e65;
+  border-radius: var(--radius);
+  color: var(--color-btn2-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.secondary-btn {
+  padding: 45px 100px;
+}
+
+.secondary-btn2 {
+  padding: 45px ;
+}
+
+.secondary-btn:hover,
+.secondary-btn2:hover {
+  color: var(--color-nav-hover);
+  background: var(--color-btn2);
+  border: 2px solid var(--color-btn2-hover);
+  box-shadow: var(--shadow-btn2);
+}
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 /* ===============
 Botões:
@@ -261,6 +461,7 @@ Botões:
   box-shadow: 0 0 80px 0px #4B56C8;
 }
 
+<<<<<<< HEAD
 .secondary-btn,
 .secondary-btn2 {
   height: 100px;
@@ -355,6 +556,8 @@ Tags:
 /* ===============
 Flutuantes:
 =============== */
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .whatsapp-float {
   position: fixed;
   z-index: 200;
@@ -378,6 +581,7 @@ Flutuantes:
   box-shadow: 0 0 50px 10px #4B56C8;
 }
 
+<<<<<<< HEAD
 /* ================================
 8) HERO-SECTION: ==================
 =================================== */
@@ -413,6 +617,27 @@ Flutuantes:
 /* ================================
 9) TICKER: ========================
 =================================== */
+=======
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  width: 100%;
+  font-size: 35px;
+  line-height: var(--lh-title);
+  text-align: left;
+}
+
+.section-header p {
+  width: 100%;
+  text-align: right;
+}
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 .ticker {
   width: 100%;
@@ -454,6 +679,7 @@ Flutuantes:
   }
 }
 
+<<<<<<< HEAD
 /* ================================
 10) GALLERY: ======================
 =================================== */
@@ -463,6 +689,23 @@ Cards:
 =============== */
 .full-card {
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+=======
+.gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.gallery-header h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.gallery-header p {
+  width: 90%;
+}
+
+.gallery-grid {
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
   display: flex;
   overflow: hidden;
   border-radius: var(--radius);
@@ -504,6 +747,7 @@ Cards:
   margin-bottom: 60px;
 }
 
+<<<<<<< HEAD
 /* ===============
 Galeria:
 =============== */
@@ -549,6 +793,8 @@ Imagens:
 11) FEATURES: =====================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .feature-card {
   display: flex;
   margin-bottom: 40px;
@@ -582,12 +828,26 @@ Imagens:
   text-align: left;
 }
 
+<<<<<<< HEAD
 .feature-image {
   width: 100%;
   height: 673px;
   border-radius: 14px 0 0 14px;
   border: 1px solid #1b1d30;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+=======
+.tag {
+  width: fit-content;
+  padding: 30px 45px;
+  margin-bottom: 30px;
+  border-radius: var(--radius);
+  border: 2px solid #1b1d30;
+  color: var(--color-tag);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  background: var(--color-bg-tag);
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
 
 p.step-number {
@@ -608,10 +868,13 @@ p.step-number {
   margin-top: 80px;
 }
 
+<<<<<<< HEAD
 /* ================================
 12) DUAL CARDS: ===================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .dual-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -643,9 +906,50 @@ p.step-number {
   line-height: var(--lh-title);
 }
 
+<<<<<<< HEAD
 /* ================================
 13) ABOUT: ========================
 =================================== */
+=======
+.icone-instagram,
+.icone-facebook {
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+.icone-instagram:hover,
+.icone-facebook:hover {
+  transform: scale(1.2);
+}
+
+.icone-olho {
+  width: 40px;
+}
+
+.icone-adicionar {
+  width: 20px;
+}
+
+.icon-lines {
+  width: 52px;
+  height: 42px;
+  position: relative;
+}
+
+.icon-lines::before,
+.icon-lines::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #2C78E4;
+}
+
+.icon-lines::after {
+  top: 10px;
+  left: 10px;
+}
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 .about-section {
   position: relative;
@@ -757,6 +1061,13 @@ p.step-number {
   line-height: var(--lh-text);
 }
 
+<<<<<<< HEAD
+=======
+.faq-header {
+  margin-bottom: 60px;
+}
+
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .span-titulos {
   color: #2F7BE7;
   font-style: italic;
@@ -799,7 +1110,11 @@ p.step-number {
 .faq-item {
   width: 85%;
   height: 113px;
+<<<<<<< HEAD
   padding: 60px 40px;
+=======
+  padding: 65px 40px;
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -839,10 +1154,13 @@ p.step-number {
   margin-bottom: 32px;
 }
 
+<<<<<<< HEAD
 /* ================================
 15) FOOTER: =======================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .footer {
   width: 100%;
   max-width: 100%;
@@ -878,10 +1196,13 @@ img.logo-rodape {
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* ================================
 16) SCROLLBAR: =====================
 =================================== */
 
+=======
+>>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 ::-webkit-scrollbar {
   width: 12px;
 }
