@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ================================
 2) ROOT: ==========================
 =================================== */
@@ -12,7 +11,7 @@ Cores (Root):
 --color-text: #C0C2D8;
 --color-bg: #050D1A;
 --color-tag: #2F7BE7;
---color-bg-tag: hsl(234 43% 13% / 1);
+--color-bg-tag: #081427;
 
 /* ===============
 Gradientes (Root):
@@ -35,7 +34,7 @@ Botões (Root):
 Bordas (Root):
 =============== */
 /*bordas comuns*/
---border-primary: #1B1D30;
+--border-primary: #161827;
 --border-tag: #1b1f44;
 --border-btn2: #3a3e65;
 /*bordas no hover*/
@@ -89,7 +88,6 @@ Layout (Root):
 /* ================================
 3) RESET: =========================
 =================================== */
-=======
 @import url('../CSS/responsive.css');
 
 :root {
@@ -101,7 +99,7 @@ Layout (Root):
   --color-text: #C0C2D8;
   --color-bg: #050D1A;
   --color-tag: #2F7BE7;
-  --color-bg-tag: #11142a;
+  --color-bg-tag: #081528;
 
 /* ======================
 --Gradientes-- 
@@ -126,7 +124,7 @@ Layout (Root):
 /* ====================== 
 --Bordas-- 
 ========================= */
-  --border-primary: #1B1D30;
+  --border-primary: #161827;
   --border-tag: #1b1f44;
   --border-btn2: #3a3e65;
 
@@ -181,7 +179,6 @@ Layout (Root):
 /* ===============================
 --**Reset Global**--
 ================================== */
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 * {
   margin: 0;
@@ -250,7 +247,6 @@ Container:
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 /* ===============
 Header:
 =============== */
@@ -298,8 +294,6 @@ nav a:hover {
 5) TIPOGRAFIA GLOBAL: =============
 =================================== */
 
-=======
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 h1,
 h2,
 h3 {
@@ -316,11 +310,10 @@ p {
   text-wrap: balance;
 }
 
-<<<<<<< HEAD
 /* ================================
 6) COMPONENTES: ===================
 =================================== */
-=======
+
 .hero {
   height: 900px;
   position: relative;
@@ -396,7 +389,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   gap: var(--gap-12);
-  border: 1px solid #3a3e65;
+  border: 1px solid var(--border-btn2);
   border-radius: var(--radius);
   color: var(--color-btn2-text);
   text-decoration: none;
@@ -421,7 +414,6 @@ nav a:hover {
   border: 2px solid var(--color-btn2-hover);
   box-shadow: var(--shadow-btn2);
 }
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 /* ===============
 Botões:
@@ -461,7 +453,6 @@ Botões:
   box-shadow: 0 0 80px 0px #4B56C8;
 }
 
-<<<<<<< HEAD
 .secondary-btn,
 .secondary-btn2 {
   height: 100px;
@@ -545,7 +536,7 @@ Tags:
   padding: 30px 45px;
   margin-bottom: 30px;
   border-radius: var(--radius);
-  border: 2px solid #1b1d30;
+  border: 2px solid var(--border-primary);
   color: var(--color-tag);
   font-size: 20px;
   font-weight: bold;
@@ -556,8 +547,6 @@ Tags:
 /* ===============
 Flutuantes:
 =============== */
-=======
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .whatsapp-float {
   position: fixed;
   z-index: 200;
@@ -581,7 +570,6 @@ Flutuantes:
   box-shadow: 0 0 50px 10px #4B56C8;
 }
 
-<<<<<<< HEAD
 /* ================================
 8) HERO-SECTION: ==================
 =================================== */
@@ -617,7 +605,7 @@ Flutuantes:
 /* ================================
 9) TICKER: ========================
 =================================== */
-=======
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -637,7 +625,6 @@ Flutuantes:
   width: 100%;
   text-align: right;
 }
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 .ticker {
   width: 100%;
@@ -646,7 +633,7 @@ Flutuantes:
   display: flex;
   align-items: center;
   overflow: hidden;
-  border: 1px solid #1b1d30;
+  border: 1px solid var(--border-primary);
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
 }
 
@@ -679,7 +666,6 @@ Flutuantes:
   }
 }
 
-<<<<<<< HEAD
 /* ================================
 10) GALLERY: ======================
 =================================== */
@@ -688,8 +674,12 @@ Flutuantes:
 Cards:
 =============== */
 .full-card {
+  display: flex;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius);
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
-=======
+}
+
 .gallery-header {
   text-align: center;
   margin-bottom: 60px;
@@ -705,11 +695,9 @@ Cards:
 }
 
 .gallery-grid {
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
   display: flex;
   overflow: hidden;
   border-radius: var(--radius);
-  border: 1px solid #1b1d30;
 }
 
 
@@ -719,7 +707,7 @@ Cards:
   height: 463px;
   overflow: hidden;
   border-radius: var(--radius);
-  border: 1px solid #1b1d30;
+  border: 1px solid var(--border-primary);
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
 }
 
@@ -738,7 +726,6 @@ Cards:
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: contents;
 }
 
 .cards-title {
@@ -747,7 +734,6 @@ Cards:
   margin-bottom: 60px;
 }
 
-<<<<<<< HEAD
 /* ===============
 Galeria:
 =============== */
@@ -774,6 +760,10 @@ Galeria:
   width: 45%;
 }
 
+.image-about {
+  width: 120%;
+}
+
 .imagem-card img {
   width: 100%;
   height: 100%;
@@ -787,18 +777,18 @@ Imagens:
 .image {
   width: 100%;
   display: flex;
+  border-radius: var(--radius);
 }
 
 /* ================================
 11) FEATURES: =====================
 =================================== */
 
-=======
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .feature-card {
   display: flex;
   margin-bottom: 40px;
   transition: all 0.2s ease;
+  border-radius: var(--radius);
 }
 
 .feature-card:hover {
@@ -828,26 +818,25 @@ Imagens:
   text-align: left;
 }
 
-<<<<<<< HEAD
 .feature-image {
   width: 100%;
   height: 673px;
   border-radius: 14px 0 0 14px;
-  border: 1px solid #1b1d30;
+  border: 1px solid var(--border-primary);
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
-=======
+}
+
 .tag {
   width: fit-content;
   padding: 30px 45px;
   margin-bottom: 30px;
   border-radius: var(--radius);
-  border: 2px solid #1b1d30;
+  border: 2px solid var(--border-primary);
   color: var(--color-tag);
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 8px;
   background: var(--color-bg-tag);
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 }
 
 p.step-number {
@@ -858,7 +847,7 @@ p.step-number {
   gap: 10px;
   width: 100%;
   height: 77px;
-  border-bottom: 2px solid #1b1d30;
+  border-bottom: 2px solid var(--border-primary);
   border-radius: var(--radius);
 }
 
@@ -868,13 +857,10 @@ p.step-number {
   margin-top: 80px;
 }
 
-<<<<<<< HEAD
 /* ================================
 12) DUAL CARDS: ===================
 =================================== */
 
-=======
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .dual-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -888,7 +874,7 @@ p.step-number {
   display: flex;
   align-items: center;
   border-radius: var(--radius);
-  border: 1px solid #1b1d30;
+  border: 1px solid var(--border-primary);
   border-left: 8px solid #2D78E4;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
   transition: all 0.4s ease;
@@ -906,11 +892,10 @@ p.step-number {
   line-height: var(--lh-title);
 }
 
-<<<<<<< HEAD
 /* ================================
 13) ABOUT: ========================
 =================================== */
-=======
+
 .icone-instagram,
 .icone-facebook {
   display: flex;
@@ -949,7 +934,6 @@ p.step-number {
   top: 10px;
   left: 10px;
 }
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 
 .about-section {
   position: relative;
@@ -988,7 +972,7 @@ p.step-number {
   justify-content: center;
   align-items: center;
   border-radius: var(--radius);
-  border: 1px solid #1b1d30;
+  border: 1px solid var(--border-primary);
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
   transition: all 0.2s ease;
 }
@@ -1025,7 +1009,7 @@ p.step-number {
 
 .about-content {
   width: 55%;
-  padding: 48px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1061,13 +1045,10 @@ p.step-number {
   line-height: var(--lh-text);
 }
 
-<<<<<<< HEAD
-=======
 .faq-header {
   margin-bottom: 60px;
 }
 
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .span-titulos {
   color: #2F7BE7;
   font-style: italic;
@@ -1110,16 +1091,13 @@ p.step-number {
 .faq-item {
   width: 85%;
   height: 113px;
-<<<<<<< HEAD
   padding: 60px 40px;
-=======
   padding: 65px 40px;
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: var(--radius);
-  border: 1px solid #1b1d30;
+  border: 1px solid var(--border-primary);
   border-left: 10px solid #2D78E4;
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
   transition: all 0.2s ease;
@@ -1137,7 +1115,7 @@ p.step-number {
   margin-left: -175px;
   padding: 60px;
   border-radius: var(--radius);
-  border: 1px solid #1b1d30;
+  border: 1px solid var(--border-primary);
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
 }
 
@@ -1154,13 +1132,10 @@ p.step-number {
   margin-bottom: 32px;
 }
 
-<<<<<<< HEAD
 /* ================================
 15) FOOTER: =======================
 =================================== */
 
-=======
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 .footer {
   width: 100%;
   max-width: 100%;
@@ -1169,7 +1144,7 @@ p.step-number {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #1b1d30;
+  border-top: 1px solid var(--border-primary);
   background: linear-gradient(90deg, #071222 0%, #08162B 100%);
 }
 
@@ -1196,13 +1171,10 @@ img.logo-rodape {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 /* ================================
 16) SCROLLBAR: =====================
 =================================== */
 
-=======
->>>>>>> d22b46738b4204a78643ba35f16f1de2d2dc68f0
 ::-webkit-scrollbar {
   width: 12px;
 }
